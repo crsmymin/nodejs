@@ -1,0 +1,77 @@
+/* set init css */
+*,html {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'NanumSquare', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #3e3e3e;
+}
+h1,h2,h3,h4,h5,h6,p,div,article,ul,ol,li,header,aside,footer,fieldset {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,ol,li {
+  list-style-type: none;
+}
+
+/* common css */
+.content {
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.content h2 {
+  text-align: center;
+}
+.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* header */
+header .wrap {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  justify-content: space-between;
+}
+nav a {
+  margin: 0 0 0 25px;
+  padding: 0 25px;
+  display: block;
+  color: #3e3e3e;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+/* footer */
+footer {
+  background-color: #3e3e3e;
+}
+footer .wrap {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  text-align: center;
+  color: grey;
+  font-size: 45px;
+}
+
+/* main page */
+#mainPage img {
+  max-width: 612px;
+  width: 100%;
+  margin: 0 auto
+}
+
+@import "./common.css";
