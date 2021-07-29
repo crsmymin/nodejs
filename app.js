@@ -12,7 +12,7 @@ const bodyparser = require('body-parser');
 const cors = require('cors');
 const morgan = require('morgan');   // morgan 임포트
 const expressLayouts = require('express-ejs-layouts');
-const routes = require('./routes');  //라우터 파일을 임포트
+const routes = require('./routes/index-router');  //라우터 파일을 임포트
 const port = 3000; // 3000번 포트로 요청 수신
 
 app.use(express.json());

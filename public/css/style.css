@@ -43,6 +43,10 @@ header .wrap {
   padding: 20px 15px;
   justify-content: space-between;
 }
+header h1 a {
+  color: #3e3e3e;
+  font-weight: 900;
+}
 nav a {
   margin: 0 0 0 25px;
   padding: 0 25px;

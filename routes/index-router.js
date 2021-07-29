@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-const main = require('./main/');
-const about = require('./about/');
-const community = require('./community/');
-const contact = require('./contact/');
+const main = require('./main-router');
+const about = require('./about-router');
+const community = require('./community-router');
+const contact = require('./contact-router');
 
 router.use('/', main);
 router.use('/about', about);
