@@ -1,0 +1,13 @@
+<h2>View</h2>
+<form id="writeFrom" action="/post" method="post">
+  <h3>게시글 번호: <%= row.board_no %> </h3>
+  <h3>작성일 : <%= row.created_at.toLocaleDateString() %> </h3>
+  <h3>수정일 : <%= row.updated_at %> </h3>
+  <label for="author">이름</label>
+  <input id="author" type="text" name="author" value="<%= row.author %> " >
+  <label for="boardTitle">글제목</label>
+  <input id="boardTitle" type="text" name="board_title" value="<%= row.board_title %> ">
+  <label for="boardContent">내용</label>
+  <textarea id="boardContent" type="text" name="board_content"><%= row.board_content %></textarea>
+  <button type="submit">전송</button>
+</form>
