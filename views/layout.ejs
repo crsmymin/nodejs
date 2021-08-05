@@ -9,13 +9,13 @@
   <title><%= title %> </title>
 </head>
 <body>
+  <%- include('header') %> 
   <div class="container">
-    <%- include('header') %> 
     <div class="content" id="<%= id %>">
       <%- body %> 
     </div>
-    <%- include('footer') %> 
   </div>
+  <%- include('footer') %> 
   <script src="/public/dist/index.bundle.js"></script>
   <%- script %> 
 </body>

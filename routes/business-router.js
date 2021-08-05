@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-/* GET About page. */
-router.get('/', function(req, res, next){
-  res.render('about',{
+/* GET Business page. */
+router.get('/', function(req, res, next) {
+  res.render('business', {
     title: "Blog",
-    id: "aboutPage",
+    id: "businessPage",
     contents : 
     [
       {menu : "ap1"},

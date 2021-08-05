@@ -1,0 +1,10 @@
+<form class="w-1/2 mx-auto bg-white rounded-md" id="writeFrom" action="/board/update" method="post">
+  <input type="hidden" name="board_no" value="<%= row.board_no %>">
+  <label for="author">이름</label>
+  <input id="author" type="text" name="author" value="<%= row.author %>">
+  <label for="boardTitle">글제목</label>
+  <input id="boardTitle" type="text" name="board_title" value="<%= row.board_title %>">
+  <label for="boardContent">내용</label>
+  <textarea id="boardContent" type="text" name="board_content"><%= row.board_content %></textarea>
+  <button type="submit">저장</button>
+</form>

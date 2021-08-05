@@ -1,3 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+/* @import 'tailwindcss/utilities'; */
+
 /* set init css */
 *,html {
   box-sizing: border-box;
@@ -20,6 +24,9 @@ ul,ol,li {
 }
 
 /* common css */
+.container {
+  margin: 0 auto;
+}
 .content {
   padding: 0 15px;
   width: 100%;
@@ -62,6 +69,8 @@ nav a {
   font-size: 18px;
   font-weight: 500;
   line-height: 35px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 /* footer */
@@ -89,12 +98,24 @@ footer .wrap {
   max-width: 1020px;
   margin: 50px auto;
   border: 1px solid #ccc;
+  border-spacing: 0;
 }
 #listTable th {
   text-align: center;
+  padding: 8px 0;
+  background-color: #3e3e3e;
+  color: #fff;
 }
+#listTable th:nth-child(1) {width: 6%;}
+#listTable th:nth-child(2) {width: 18%;}
+#listTable th:nth-child(3) {width: 60%;}
+#listTable th:nth-child(4) {width: 16%;}
 #listTable td {
   text-align: center;
+  padding: 8px 10px;
+}
+#listTable td.tal {
+  text-align: left;
 }
 #writeFrom {
   width: 100%;
@@ -121,7 +142,7 @@ input {
 textarea {
   resize: none;
   width: 100%;
-  height: 150px;
+  height: 250px;
   padding: 20px 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -147,4 +168,35 @@ button {
   cursor: pointer;
 }
 
-@import "./common.css";
+/* board */
+.board-card {
+  margin : 0 auto 150px;
+  max-width : 1020px;
+  padding : 20px;
+  border : 1px solid #ddd;
+  border-radius : 15px
+}
+.btn-wrap {
+  margin : 0 auto 150px;
+  max-width : 1020px;
+  display : flex;
+  flex-wrap : wrap;
+  flex-direction : row;
+  justify-content : space-between;
+}
+.btn-wrap a {
+  width : 48%;
+}
+.btn-normal {
+  padding : 8px 0;
+  display : block;
+  text-align : center;
+  border : 1px solid #3e3e3e;
+}
+.btn-delete {
+  padding : 8px 0;
+  display : block;
+  text-align : center;
+  color : #fff;
+  background : coral;
+}

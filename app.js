@@ -1,17 +1,21 @@
 require('dotenv').config()
 
 // import 모듈
-const express = require('express'); // Express 임포트
-const app = express();              // Express 앱 생성
-const webpackDevMiddleware = require("webpack-dev-middleware");
 const webpack = require("webpack");
+const webpackDevMiddleware = require("webpack-dev-middleware");
 const webpackConfig = require("./webpack.config.js");
 const compiler = webpack(webpackConfig);
+const express = require('express'); // Express 임포트
+const app = express();              // Express 앱 생성
+const port = 3000; // 3000번 포트로 요청 수신
 const cors = require('cors');
 const morgan = require('morgan');   // morgan 임포트
+const moment = require('moment');
+const nodemailer = require('nodemailer');
+const today = moment();
+const path = ('path');
 const expressLayouts = require('express-ejs-layouts');
 const routes = require('./routes/index-router');  //라우터 파일을 임포트
-const port = 3000; // 3000번 포트로 요청 수신
 
 // app use
 app.use(express.urlencoded({extended: true}));
@@ -32,4 +36,5 @@ app.set("layout extractScripts", true); // 템플릿 script 추출
 // 서버실행
 app.listen(port, () => {            
   console.log('서버실행 : http://localhost:', port);
+  console.log(today.format());
 });
