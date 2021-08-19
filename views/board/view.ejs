@@ -1,15 +1,21 @@
-<h2>View</h2>
+<h2><%= row.board_title %></h2>
 <div class="board-card">
-  <h3>작성일 : <%= row.created_at %> </h3>
-  <h3>수정일 : <%= row.updated_at %> </h3>
   <label for="author">작성자</label>
   <p><%= row.author %></p>
-  <label for="boardTitle">글제목</label>
-  <p><%= row.board_title %></p>
   <label for="boardContent">내용</label>
-  <pre><%= row.board_content %></pre>
+  <div>
+    <%- row.board_content %>
+  </div>
+  <div class="row">
+    <h3 class="col">작성일 : <%= moment(row.created_at).format("YYYY-MM-DD HH:mm:ss")%></h3>
+    <% if(row.updated_at != null) { %>
+    <h3 class="col">수정일 : <%= moment(row.updated_at).format("YYYY-MM-DD HH:mm:ss")%></h3>
+    <% } %> 
+  </div>
 </div>
-<div class="btn-wrap">
-  <a class="btn-normal" href="/board/edit/<%= row.board_no %> ">게시글 수정</a>
-  <a id="btnDelete" class="btn-delete" href="javascript:void(0)">게시글 삭제</a>
+<% if(session.user) { %> 
+<div class="btn-wrap row">
+  <a class="btn btn-secondary" href="/board/edit/<%= row.board_no %> ">게시글 수정</a>
+  <a class="btn btn-danger" id="btnDelete" href="javascript:void(0)">게시글 삭제</a>
 </div>
+<% } %> 

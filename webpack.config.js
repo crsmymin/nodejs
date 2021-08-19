@@ -5,7 +5,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const MODE = process.env.WEBPACK_ENV;
 
 module.exports = {
-  // mode: 'production',
   mode: MODE,
   devtool: "source-map", //크롬에서 디버깅 가능하도록 원본코드같이 bundle
   entry: {
@@ -13,8 +12,8 @@ module.exports = {
   },
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "./public/dist"),
-    publicPath: "http://localhost:3000/public/dist/",
+    path: path.resolve(__dirname, "./dist"),
+    publicPath: "http://localhost:3000/dist/",
   },
   module: {
     rules: [
@@ -30,9 +29,25 @@ module.exports = {
       },
       {
         test: /\.(sa|sc|c|pc)ss$/, //scss,sass,css,pcss templating
-        use: [MiniCssExtractPlugin.loader,"css-loader", "sass-loader", "postcss-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader", 
+          "sass-loader", 
+        ],
       },
     ],
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendors",
+          enforce: true,
+          chunks: "all"
+        }
+      }
+    }
   },
   plugins: [
     new webpack.ProvidePlugin({
@@ -40,7 +55,7 @@ module.exports = {
       jQuery: "jquery"
     }),
     new MiniCssExtractPlugin({ 
-      filename: 'style.css',
+      // filename: 'style.css',
       chunkFilename: 'style.css',
     }),
   ],

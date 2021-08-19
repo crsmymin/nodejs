@@ -1,0 +1,20 @@
+<h4>LOGIN</h4>
+<% if(session.user) {%>
+<form action="/logout" id="logoutForm" method="GET">
+  <button class="btn btn-secondary mb-3 mt-3" type="submit">LOGOUT</button>
+</form>
+<% } else { %>
+<form action="/login" id="loginForm" method="POST">
+  <div class="mb-3">
+    <input class="form-control" id="loginName" type="text" name="login_name" />
+  </div>
+  <div class="mb-3">
+    <input class="form-control" id="loginPassword" type="password" name="login_password" />
+  </div>
+  <button class="btn btn-secondary mb-3 mt-3" type="submit">LOGIN</button>
+</form>
+<div class="btn-wrap row">
+  <a class="btn btn-dark" href="">아이디 찾기</a>
+  <a class="btn btn-dark" href="">비밀번호 찾기</a>
+</div>
+<% } %> 
