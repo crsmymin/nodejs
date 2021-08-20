@@ -2,23 +2,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/dist/vendors.css">
-  <link rel="stylesheet" href="/dist/index.css">
-  <title><%= title %> </title>
+  <%- include('head') %> 
 </head>
 <body id="<%= id %>">
-  <%- include('header') %> 
+  <%- include('navbar') %> 
   <div class="container">
     <div class="content">
       <%- body %> 
     </div>
   </div>
   <%- include('footer') %> 
-  <script src="/dist/vendors.bundle.js"></script>
-  <script src="/dist/index.bundle.js"></script>
   <%- script %> 
 </body>
 </html>

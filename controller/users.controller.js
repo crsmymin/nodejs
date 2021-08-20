@@ -30,10 +30,6 @@ exports.login = (req,res,next) => {
       // 비밀번호 일치
       if(userPassword === hashPassword) {
         console.log("login success"); 
-        // res.cookie("user", req.body.userName, {
-        //   expires: new Date(Date.now() + 900000),
-        //   httpOnly: true
-        // })
         req.session.user = {
           id: user.user_name,
           name: '관리자',

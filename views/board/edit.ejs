@@ -2,15 +2,15 @@
   <input type="hidden" name="board_no" value="<%= row.board_no %>">
   <div class="mb-3">
     <label class="form-label" for="author">이름</label>
-    <input class="form-control" id="author" type="text" name="author" value="<%= row.author %>">
+    <input class="form-control" id="author" type="text" name="author" value="<%= row.author %>" required>
   </div>
   <div class="mb-3">
     <label class="form-label" for="boardTitle">글제목</label>
-    <input class="form-control" id="boardTitle" type="text" name="board_title" value="<%= row.board_title %>">
+    <input class="form-control" id="boardTitle" type="text" name="board_title" value="<%= row.board_title %>" required>
   </div>
   <div class="mb-3">
     <label class="form-label" for="boardContent">내용</label>
-    <textarea class="form-control summernote" id="boardContent" type="text" name="board_content"><%= row.board_content %></textarea>
+    <textarea class="form-control summernote" id="boardContent" type="text" name="board_content" required><%= row.board_content %></textarea>
   </div>
   <button class="btn btn-primary mb-3" type="submit">저장</button>
 </form>

@@ -30,6 +30,13 @@ select,
 textarea {
   font-family: initial; }
 
+/* admin */
+.display-admin h3 {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 16px;
+  color: coral; }
+
 /* common css */
 .container {
   margin: 0 auto; }

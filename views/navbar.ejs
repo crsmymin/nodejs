@@ -1,4 +1,11 @@
 <header>
+  <% if(user) { %> 
+    <div class="display-admin">
+      <h3>
+        <%= user.name %> 접속중 
+      </h3>
+    </div>
+  <% } %> 
   <div class="wrap display-flex">
     <h1>
       <a href="/">

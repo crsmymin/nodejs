@@ -21,9 +21,15 @@ app.use(expressSession({
   resave: false,
   saveUninitialized: true,
   cookie: {
-    maxAge: 1000 * 60 * 60 // 쿠키 유효기간 24시간
+    maxAge: 1000 * 60 * 60 // 쿠키 유효기간 1시간
   }
 }));
+
+app.use(function(req,res,next) {
+  res.locals.user = req.session.user;
+  next();
+})
+
 
 // cookie parser
 app.use(cookieParser());
