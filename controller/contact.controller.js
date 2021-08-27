@@ -15,8 +15,7 @@ exports.sendmail = (req, res, next) => {
   
   // set transporter
   var transporter = nodemailer.createTransport({
-    service: 'gmail',
-    port: 465,
+    service: 'Naver',
     auth: {
       user: mailinfo.user,
       pass: mailinfo.pass
