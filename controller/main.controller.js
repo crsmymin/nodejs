@@ -12,6 +12,7 @@ exports.index = (req, res, next) => {
   conn.query(sql, function (err, rows, fields) {
     if(err) console.log('query is not excuted. select fail...\n' + err);
     else {
+      console.log(rows);
       res.render('main',{
         list : rows,
         title: "스타치과의원",
