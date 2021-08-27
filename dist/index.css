@@ -1,6 +1,3 @@
-/*!*************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./public/css/common.css ***!
-  \*************************************************************************/
 /* set init css */
 *,html {
   box-sizing: border-box;
@@ -65,9 +62,6 @@ section .wrap {
   display: block;
   width: 100%;
 }
-/*!**********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./public/css/nav.css ***!
-  \**********************************************************************/
 /* header */
 header {
   position: fixed;
@@ -136,11 +130,8 @@ nav a:hover {
   background-color: #345985;
   color: #fff;
 }
-/*!***********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./public/css/main.css ***!
-  \***********************************************************************/
 #mainPage {
-  background-image: url(http://localhost:3000/dist/4004c46bfbd846c92f81.jpg);
+  background-image: url(/dist/4004c46bfbd846c92f81.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -243,7 +234,7 @@ nav a:hover {
 }
 
 #mainPage #communicate {
-  background-image: url(http://localhost:3000/dist/d188f8df5ef15ae68ca8.jpg);
+  background-image: url(/dist/d188f8df5ef15ae68ca8.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -365,17 +356,8 @@ nav a:hover {
   margin: 0;
 }
 
-/*!****************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./public/css/business1.css ***!
-  \****************************************************************************/
 
-/*!****************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./public/css/business2.css ***!
-  \****************************************************************************/
 
-/*!************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./public/css/about.css ***!
-  \************************************************************************/
 #aboutPage section {
   padding: 70px 30px;
 }
@@ -486,132 +468,12 @@ nav a:hover {
   color: #3e3e3e;
 }
 
-/*!**************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./public/css/contact.css ***!
-  \**************************************************************************/
 /* contact css */
 #contactPage textarea {
   resize: none;
   height: 250px;
 }
-/*!***************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./public/css/style.css ***!
-  \***************************************************************************************************************/
-/* admin */
-.display-admin {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 9999;
-  width: 140px; }
-
-.display-admin h3 {
-  padding: 10px 0;
-  text-align: center;
-  font-size: 16px;
-  color: coral;
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 25px; }
-
-/* aside */
-aside {
-  position: fixed;
-  top: 50%;
-  right: 2%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  z-index: 9991; }
-
-aside li {
-  margin: 2px 0; }
-
-aside a {
-  display: block;
-  width: 80px;
-  height: 80px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  overflow: hidden; }
-
-aside a img {
-  display: block;
-  width: 100%; }
-
-aside li:nth-child(4) a,
-aside li:nth-child(5) a {
-  color: #fff;
-  text-align: center;
-  background-color: #3e3e3e;
-  line-height: 80px; }
-
-/* footer */
-footer {
-  background-color: #333; }
-
-footer .wrap {
-  width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 35px 30px;
-  color: #fff;
-  justify-content: space-between; }
-
-footer .copyright {
-  border-top: 1px solid #5c5c5c;
-  padding: 5px 0;
-  color: #fff;
-  font-size: 12px;
-  text-align: center; }
-
-footer .copyright a {
-  color: coral; }
-
-footer .copyright a:hover {
-  color: coral; }
-
-footer .footer-info {
-  width: 33.333333%; }
-
-.footer-info1 h3 {
-  margin: 0 0 30px; }
-
-.footer-info1 h3 img {
-  width: 250px; }
-
-.footer-info1 ul {
-  margin: 0 0 0 50px; }
-
-.footer-info1 li {
-  margin: 0 0 8px;
-  font-size: 14px; }
-
-.footer-info2,
-.footer-info3 {
-  padding: 0 0 0 50px; }
-
-.footer-info2 h4,
-.footer-info3 h4 {
-  margin: 0 0 25px;
-  font-size: 18px; }
-
-.footer-info2 li,
-.footer-info3 li {
-  margin: 0 0 8px;
-  font-size: 14px; }
-
-.footer-info2 img {
-  display: block;
-  width: 100%; }
-
-.footer-info3 li:nth-child(4),
-.footer-info3 li:nth-child(5) {
-  color: #ffde00; }
+.display-admin{position:fixed;top:10px;right:10px;z-index:9999;width:140px}.display-admin h3{padding:10px 0;text-align:center;font-size:16px;color:coral;background:rgba(0,0,0,0.7);border-radius:25px}aside{position:fixed;top:50%;right:2%;transform:translateY(-50%);-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);z-index:9991}aside li{margin:2px 0}aside a{display:block;width:80px;height:80px;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;overflow:hidden}aside a img{display:block;width:100%}aside li:nth-child(4) a,aside li:nth-child(5) a{color:#fff;text-align:center;background-color:#3e3e3e;line-height:80px}footer{background-color:#333}footer .wrap{width:100%;max-width:1920px;margin:0 auto;padding:35px 30px;color:#fff;justify-content:space-between}footer .copyright{border-top:1px solid #5c5c5c;padding:5px 0;color:#fff;font-size:12px;text-align:center}footer .copyright a{color:coral}footer .copyright a:hover{color:coral}footer .footer-info{width:33.333333%}.footer-info1 h3{margin:0 0 30px}.footer-info1 h3 img{width:250px}.footer-info1 ul{margin:0 0 0 50px}.footer-info1 li{margin:0 0 8px;font-size:14px}.footer-info2,.footer-info3{padding:0 0 0 50px}.footer-info2 h4,.footer-info3 h4{margin:0 0 25px;font-size:18px}.footer-info2 li,.footer-info3 li{margin:0 0 8px;font-size:14px}.footer-info2 img{display:block;width:100%}.footer-info3 li:nth-child(4),.footer-info3 li:nth-child(5){color:#ffde00}
 
 
 /*# sourceMappingURL=index.css.map*/

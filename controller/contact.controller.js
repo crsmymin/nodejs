@@ -16,15 +16,20 @@ exports.sendmail = (req, res, next) => {
   // set transporter
   var transporter = nodemailer.createTransport({
     service: 'Naver',
+    // host: 'smtp.naver.com',
+    // port: 587,
     auth: {
       user: mailinfo.user,
       pass: mailinfo.pass
-    }
+    },
+    // tls: {
+    //   rejectUnauthorized: false
+    // }
   })
 
   // set mail option set 
   var mailOption = {
-    from: "스타치과의원",
+    from: "From Website 스타치과의원",
     to: "yeongmin.kang@cfind.co.kr",
     subject: req.body.contact_subject,
     html: "<h2 style='font-size:24px;'>스타치과의원 문의 메일입니다.</h2>" +  
