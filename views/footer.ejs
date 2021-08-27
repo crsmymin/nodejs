@@ -1,8 +1,48 @@
 <footer>
-  <div class="wrap">
-    footer
-    <a href="/login">login</a>
+  <div class="wrap display-flex">
+    <div class="footer-info footer-info1">
+      <h3>
+        <img src="/public/images/common/top_logo.png" alt="">
+      </h3>
+      <ul>
+        <li>상호 : 남구스타치과의원 | 대표 : 이규민 | 사업자번호 : 820-92-01316</li>
+        <li>남구점 : 광주광역시 남구 봉선호 8 국제호텔 1층</li>
+      </ul>
+    </div>
+    <div class="footer-info footer-info2">
+      <div class="contacts">
+        <h4>대표전화</h4>
+        <ul>
+          <li>Phone : 062-225-300</li>
+          <li>Fax : 062-225-3066</li>
+          <li>Email : namgustar3000@daum.net</li>
+        </ul>
+      </div>
+      <img src="/public/images/common/sketch-map.png" alt="">
+    </div>
+    <div class="footer-info footer-info3">
+      <div class="care-time">
+        <h4>진료시간</h4>
+        <ul>
+          <li>월-금 :  09:30 ~ 18:30</li>
+          <li>토요일 :  09:30 ~ 12:30</li>
+          <li>점심시간 :  12:30 ~ 14:00</li>
+          <li>야간진료 : (수) ~ 20:00 시 까지</li>
+          <li>※ 토요일은 점심시간 없이 진료하며, 일요일, 공휴일,국경일은 휴무입니다.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    Copyright © "Namgu Star Dental" All Right Reserved. <a href="/login">[admin]</a> 
   </div>
 </footer>
+<% if(user) { %> 
+  <div class="display-admin">
+    <h3>
+      <%= user.id %> 접속중 
+    </h3>
+  </div>
+<% } %> 
 <script src="/dist/vendors.bundle.js"></script>
 <script src="/dist/index.bundle.js"></script>

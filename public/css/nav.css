@@ -1,0 +1,68 @@
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: #fff;
+  z-index: 9999;
+}
+header .wrap {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 20px 30px 0;
+  justify-content: space-between;
+}
+header h1 {
+  margin: 0 0 20px;
+}
+header h1 a img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+nav li {
+  width: 20%;
+  border: 1px solid #e8e8e8;
+  border-bottom: 0; 
+}
+nav a {
+  display: block;
+  padding: 10px 0;
+  color: #3e3e3e;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
+}
+nav a:hover {
+  color: #fff;
+  background-color: #345985;
+}
+#aboutPage nav li:nth-child(1) a {
+  background-color: #345985;
+  color: #fff;
+}
+#businessPage1 nav li:nth-child(2) a {
+  background-color: #345985;
+  color: #fff;
+}
+#businessPage2 nav li:nth-child(3) a {
+  background-color: #345985;
+  color: #fff;
+}
+#communityPage nav li:nth-child(4) a {
+  background-color: #345985;
+  color: #fff;
+}
+#contactPage nav li:nth-child(5) a {
+  background-color: #345985;
+  color: #fff;
+}

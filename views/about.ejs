@@ -1,9 +1,395 @@
-<h2>about</h2>
-<p>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iste sunt possimus ipsam, voluptate deleniti quis quidem. Nulla distinctio iure, accusamus nostrum, ipsum quia veritatis voluptas nam, ullam illo aperiam!
-</p>
-<ul>
-  <% for(i=0; i<contents.length; i++) { %> 
-  <li><%= contents[i].menu %></li>
-  <% } %> 
-</ul>
+<!--s: subpage visual -->
+<h3 class="subpage-visual">
+  <img src="/public/images/about/about-visual.jpg" alt="치과의원 소개">
+</h3>
+<!--e: subpage visual -->
+
+<!--s: greeting  -->
+<section id="greeting">
+  <h4><strong>남구스타치과의원</strong>을 선택해야 하는 이유!</h4>
+  <div class="wrap">
+    <div class="box box1 display-flex">
+      <div class="img-cont">
+        <img src="/public/images/about/greet1.png" alt="">
+      </div>
+      <div class="txt-cont">
+        <h6>01.환자중심병원</h6>
+        <p>
+          <em>남구스타치과의원</em>은 환자중심의 1:1진료를 원칙으로 하면,<br>
+          첫 내원부터 마지막 진료까지 책임지겠습니다.<br>
+          찾아주신 환자분들이 불편함이 없도록 항상 최선의 노력을 다하며,<br>
+          혹 불편함이 있으시면 말씀해 주시기 바랍니다.<br>
+          바로 해결해 드리겠습니다.
+        </p>
+      </div>
+    </div>
+    <div class="box box2 display-flex">
+      <div class="img-cont">
+        <img src="/public/images/about/greet2.png" alt="">
+      </div>
+      <div class="txt-cont">
+        <h6>02.기본을 지키는 병원</h6>
+        <p>
+          <em>남구스타치과의원</em>은 다년간의 풍부한 진료 노하우, 위생관리가 철저한 깨끗한 시설,<br>
+          과잉진료가 아닌 자연주의를 지향하는 진료철학 이모든 것은 남구스타치과의원의 모토이자<br>
+          그 무엇과도 타협 할 수 없는 고객과의 약속입니다.
+        </p>
+      </div>
+    </div>
+    <div class="box box3 display-flex">
+      <div class="img-cont">
+        <img src="/public/images/about/greet3.png" alt="">
+      </div>
+      <div class="txt-cont">
+        <h6>
+          03.환자와 구성원의 만족을<br>
+          우선의 가치로 여기는 병원
+        </h6>
+        <p>
+          <em>남구스타치과의원</em>은 단순히 이익만을 추구하는 병원이 아닙니다.<br>
+          내원하신 환자분들에게 꼭 필요한 진료를 통하여 정당한 노동을 제공하고,<br>
+          이에 대한 합당한 이윤을 추구하는 정직한 병원입니다.
+        </p>
+      </div>
+    </div>
+    <div class="box box4 display-flex">
+      <div class="img-cont">
+        <img src="/public/images/about/greet4.png" alt="">
+      </div>
+      <div class="txt-cont">
+        <h6>04.식약청 인증</h6>
+        <p>
+          <em>남구스타치과의원</em>을 내원하신 환자분들 모두가 저의 구성원의 가족,<br>
+          지인 친구이자 이웃이기에 본원에서 사용하는 모든 제품은 반드시<br>
+          식약청(KFDA)에서 인증하는 제품입니다.
+        </p>
+      </div>
+    </div>
+    <div class="box box5 display-flex">
+      <div class="img-cont">
+        <img src="/public/images/about/greet5.png" alt="">
+      </div>
+      <div class="txt-cont">
+        <h6>05.정직한 병원</h6>
+        <p>
+          <em>남구스타치과의원</em>을 많은 고객들이 찾아오시는데는 반드시 이유가 있습니다.<br>
+          본원을 내원하신 환자들에게 진료 시작부터 끝나는 시점까지 자세한 설명을 통하여 환자들이<br>
+          충분히 이해할 수 있도록 하며, 과잉진료 없이 정직한 진료만을 하는 병원입니다.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--e: greeting  -->
+
+<!--s: doctors  -->
+<section id="introDoctors">
+  <h4><strong>의료진</strong>소개</h4>
+  <div class="wrap">
+    <div class="box">
+      <img src="/public/images/about/doctor-with-text.jpg" alt="">
+    </div>
+  </div>
+</section>
+<!--e: doctors  -->
+
+<!--s: equipment  -->
+<section id="equipment">
+  <h4><strong>진료장비</strong> 및 시스템</h4>
+  <div class="wrap">
+    <div class="box">
+      <img src="/public/images/about/equipment.png" alt="">
+    </div>
+  </div>
+</section>
+<!--e: equipment  -->
+
+<!--s: estimate  -->
+<section id="estimate">
+  <h4>진료<strong>비용</strong></h4>
+  <h5>비급여 수가 안내 (2021. 01. 01~)</h5>
+  <div class="wrap">
+    <div class="box">
+      <table>
+        <tr height='50px'>
+          <th width="16%">진료내용</th>
+          <th width="22%">종류(타입)</th>
+          <th width="16%">진료수가(만원)</th>
+          <th width="26%">비고</th>
+        </tr>
+        <tr>
+          <td rowspan="5">일반보철류</td>
+          <td>Gold-Inlay(onlay)</td>
+          <td>40(60)</td>
+          <td rowspan="11">
+            <b>임시치아 제작비용</b><br /><br />
+            <b>Temporary 시</b><br />
+            4전치 이하 : 5<br />
+            4전치 이상 : 10<br /><br />
+            <b>Flipper 시</b><br />
+            6전치 이하 : 5<br />
+            6전치 이상 : 10
+          </td>
+        </tr>
+        <tr>
+          <td>Gold-Crown(A)</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Gold-Crown(PT)</td>
+          <td>70</td>
+        </tr>
+        <tr>
+          <td>Gold-Crown Super</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>Metal-Crown</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td rowspan="6">심미보철류</td>
+          <td>Zir-Inlay(onlay)</td>
+          <td>35(40)</td>
+        </tr>
+        <tr>
+          <td>PFM</td>
+          <td>35</td>
+        </tr>
+        <tr>
+          <td>PFG</td>
+          <td>65</td>
+        </tr>
+        <tr>
+          <td>All-Ceramic</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Zir-Crown</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Laminate</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td rowspan="3">포스트(기둥)류</td>
+          <td>Core(코아)</td>
+          <td>5</td>
+          <td rowspan="3"></td>
+        </tr>
+        <tr>
+          <td>Scew Post or Pin 타입</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Casting Post(imp용)</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td rowspan="4">레진치료</td>
+          <td>치경부</td>
+          <td>5</td>
+          <td rowspan="4"></td>
+        </tr>
+        <tr>
+          <td>교합면</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>전치부</td>
+          <td>10~15(와동에 따라)</td>
+        </tr>
+        <tr>
+          <td>Diastema(공간당)</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td style="height:40px">기타</td>
+          <td>실런트 / 불소</td>
+          <td>3</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td rowspan="2">임플란트</td>
+          <td>Osstem(BA)</td>
+          <td>120</td>
+          <td rowspan="2">
+            <!--일반 완성건 PFM<br /><br />
+							<b>※ 보철 변경 시 비용 추가됨<br />
+							Zir-cr + 15m</b><br />-->
+            Gold-cr(Full 타입 아님) + <b>35</b>
+          </td>
+        </tr>
+        <tr>
+          <td>메가젠(옥타)</td>
+          <td>130</td>
+        </tr>
+      </table>
+
+      <table>
+        <tr height='50px'>
+          <th width="16%">진료내용</th>
+          <th width="22%">종류(타입)</th>
+          <th width="16%">진료수가(만원)</th>
+          <th width="26%">비고</th>
+        </tr>
+        <tr>
+          <td rowspan="6">외과적시술</td>
+          <td>상악동거상술</td>
+          <td>50 , 100, 150</td>
+          <td rowspan="6">
+            <!--CT(3D)비용<br /><br />
+							비보 : 11<br /><br />
+							제3대 구치 완전매복시엔 보험적용-->
+          </td>
+        </tr>
+        <tr>
+          <td>(Rt/Lt) 1/2 부위 당</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Osteotome (치식 당)</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>치조골이식술(건당)</td>
+          <td rowspan="2">30</td>
+        </tr>
+        <tr>
+          <td>(인공뼈 or 자가뼈)</td>
+        </tr>
+        <tr>
+          <td>치조능분할술(편측 부위 당)</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td rowspan="5">덴처(틀니)류</td>
+          <td>부분틀니(R.P.D)</td>
+          <td>130</td>
+          <td rowspan="5">
+            가공료 수가 다름<br /><br />보험용과 비ㆍ보용 다름
+          </td>
+        </tr>
+        <tr>
+          <td>전체틀니(Full)</td>
+          <td>130</td>
+        </tr>
+        <tr>
+          <td>오버덴처(임플란트용)</td>
+          <td>140</td>
+        </tr>
+        <tr>
+          <td>Valplasta</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <td>임시틀니(악당)</td>
+          <td>30</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">기타장치류</td>
+          <td>Splinter(이갈이방지용)</td>
+          <td>35</td>
+          <td rowspan="2"></td>
+        </tr>
+        <tr>
+          <td>Space Maintainer</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>미백</td>
+          <td>1회당 (오스템)
+            <!--<br />버블타입(sic)-->
+          </td>
+          <td>10
+            <!--(5회 시 30)<br />30-->
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>이갈이장치</td>
+          <td>1회 한정(횟수 상관 없이)</td>
+          <td>30</td>
+          <td>Soft, Hard 상관 없이</td>
+        </tr>
+        <tr>
+          <td rowspan="2">스켈링</td>
+          <td>일반</td>
+          <td>5</td>
+          <td rowspan="2"></td>
+        </tr>
+        <tr>
+          <td>학생 (19세 이하)</td>
+          <td>3</td>
+        </tr>
+      </table>
+      
+      <table>
+        <tr height='50px'>
+          <th width="16%" rowspan='12'>제증명<br />&nbsp;<br />수수료</th>
+          <th width="26%">서류내용</th>
+          <th width="28%">발급비용(1회발급기준/단위:원)</th>
+          <th width="10%">비고</th>
+        </tr>
+        <tr height='50px'>
+          <td>향후 치료비 추정서</td>
+          <td>50,000</td>
+          <td></td>
+        </tr>
+        <tr height='50px'>
+          <td>병사용 진단서</td>
+          <td>30,000</td>
+          <td></td>
+        </tr>
+        <tr height='50px'>
+          <td>치료계획서</td>
+          <td>10,000</td>
+          <td></td>
+        </tr>
+        <tr height='50px'>
+          <td>소견서</td>
+          <td>10,000</td>
+          <td></td>
+        </tr>
+        <tr height='50px'>
+          <td>진단서</td>
+          <td>10,000</td>
+          <td></td>
+        </tr>
+        <tr height='50px'>
+          <td>통원치료 확인서</td>
+          <td>3,000</td>
+          <td></td>
+        </tr>
+        <tr height='50px'>
+          <td>초(재)진 기록지</td>
+          <td>10매이하 (3,000)</td>
+          <td></td>
+        </tr>
+        <tr height='50px'>
+          <td>의무기록지</td>
+          <td>10매이상 (1매당 50)</td>
+          <td></td>
+        </tr>
+        <tr height='50px'>
+          <td>진료확인서</td>
+          <td>무료</td>
+          <td></td>
+        </tr>
+        <tr height='50px'>
+          <td>엑스레이 판독지</td>
+          <td>무료</td>
+          <td></td>
+        </tr>
+        <tr height='50px'>
+          <td>진료비 영수증</td>
+          <td>무료</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+<!--e: estimate  -->

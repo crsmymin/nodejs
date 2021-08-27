@@ -11,7 +11,7 @@ const path = ('path');
 const fs = require('fs'); // file system 임포트
 const cookieParser = require('cookie-parser'); 
 const expressSession = require('express-session');
-const nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer'); // node 메일러 
 const expressLayouts = require('express-ejs-layouts');
 const routes = require('./routes/index-router');  //라우터 파일을 임포트
 

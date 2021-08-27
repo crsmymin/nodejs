@@ -1,23 +1,17 @@
 <header>
-  <% if(user) { %> 
-    <div class="display-admin">
-      <h3>
-        <%= user.name %> 접속중 
-      </h3>
-    </div>
-  <% } %> 
-  <div class="wrap display-flex">
-    <h1>
+  <div class="wrap">
+    <h1 id="topLogo">
       <a href="/">
-        <img src="/public/images/top_logo.png" alt="">
+        <img src="/public/images/common/top_logo.png" alt="">
       </a>
     </h1>
     <nav>
       <ul class="display-flex">
-        <li><a href="/about">about</a></li>
-        <li><a href="/business">business</a></li>
-        <li><a href="/board">board</a></li>
-        <li><a href="/contact">contact</a></li>
+        <li><a href="/about">의원소개</a></li>
+        <li><a href="/business/1">임플란트</a></li>
+        <li><a href="/business/2">종합진료</a></li>
+        <li><a href="/board">공지사항</a></li>
+        <li><a href="/contact">1:1문의</a></li>
       </ul>
     </nav>
   </div>

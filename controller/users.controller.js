@@ -33,6 +33,7 @@ exports.login = (req,res,next) => {
         req.session.user = {
           id: user.user_name,
           name: '관리자',
+          email: user.user_email,
           authorized: true
         }
         res.send("<script>alert('로그인 되었습니다.'); window.location.href='/';</script>");

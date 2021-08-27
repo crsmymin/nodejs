@@ -1,0 +1,109 @@
+#aboutPage section {
+  padding: 70px 30px;
+}
+#aboutPage section h4 {
+  margin: 0 0 45px;
+  font-size: 34px;
+  text-align: center;
+  font-weight: 500;
+}
+#aboutPage section h4 {
+  color: #4e9e00;
+}
+#aboutPage section h4 strong {
+  color: #0858c5;
+}
+#aboutPage #greeting .img-cont {
+  width: 35%;
+  margin: 0 5% 0 0;
+}
+#aboutPage #greeting .txt-cont {
+  width: 60%;
+  padding: 15px 25px;
+  box-shadow: 1px 1px 8px 2px #ddd;
+  box-sizing: border-box;
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
+  transform: translate(0,0);
+  -webkit-transform: translate(0,0);
+  -moz-transform: translate(0,0);
+  -ms-transform: translate(0,0);
+  -o-transform: translate(0,0);
+}
+#aboutPage #greeting .txt-cont:hover {
+  transform: translate(-15px, -15px);
+  -webkit-transform: translate(-15px, -15px);
+  -moz-transform: translate(-15px, -15px);
+  -ms-transform: translate(-15px, -15px);
+  -o-transform: translate(-15px, -15px);
+}
+#aboutPage #greeting .img-cont img {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 0 0 auto;
+}
+#aboutPage #greeting .box {
+  margin: 0 0 35px;
+}
+#aboutPage #greeting .box5 {
+  margin: 0;
+}
+#aboutPage #greeting h6 {
+  margin: 0 0 15px;
+  font-size: 24px;
+  color: #0858c5;
+  font-weight: 700;
+  line-height: 1.45;
+}
+#aboutPage #greeting p {
+  font-size: 16.5px;
+  line-height: 1.65;
+}
+#aboutPage #greeting p em {
+  color: #4e9e00;
+  font-style: normal;
+  font-weight: 500;
+}
+#aboutPage #introDoctors .box img {
+  display: block;
+  width: 100%;
+}
+#aboutPage #equipment .box img {
+  display: block;
+  width: 100%;
+}
+#aboutPage #estimate h5 {
+  margin: 0 0 25px;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 500;
+}
+#aboutPage #estimate table {
+  margin: 0 0 15px;
+  width: 100%;
+  border-spacing: 0;
+  padding: 0;
+  border: 0;
+  border-collapse: collapse;
+}
+#aboutPage #estimate th,
+#aboutPage #estimate td {
+  text-align: center;
+  border: 1px solid #3e3e3e;
+}
+#aboutPage #estimate th {
+  background-color: rgb(116, 116, 116);
+  color: #fff;
+  font-size: 15px;
+}
+#aboutPage #estimate td {
+  padding: 8px 0;
+  font-size: 15px;
+  line-height: 20px;
+  background: #fff;
+  color: #3e3e3e;
+}

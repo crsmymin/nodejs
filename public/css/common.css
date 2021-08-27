@@ -1,0 +1,64 @@
+/* set init css */
+*,html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #3e3e3e;
+}
+h1,h2,h3,h4,h5,h6,p,div,article,ul,ol,li,header,aside,footer,fieldset {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #3e3e3e;
+}
+ul,ol,li {
+  list-style-type: none;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: initial;
+}
+
+/* common css */
+.container-fluid {
+  padding: 0;
+}
+.content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 148px 0 90px;
+}
+.content .wrap {
+  margin: 0 auto;
+}
+.content h2 {
+  text-align: center;
+  font-size: 26px;
+  margin: 10px 0 35px;
+}
+.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+section {
+  margin: 0 auto;
+  padding: 0 30px;
+}
+section .wrap {
+  max-width: 1300px;
+}
+.subpage-visual img {
+  display: block;
+  width: 100%;
+}

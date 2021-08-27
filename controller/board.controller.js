@@ -50,7 +50,7 @@ exports.create = (req, res, next) => {
   var author = req.body.author;
   // datas
   var datas = [boardTitle,boardContent,createdAt,author];
-
+  
   // query
   var sql = "INSERT INTO board (board_title, board_content, created_at, author)" + 
             "VALUES(?, ?, ?, ?)";

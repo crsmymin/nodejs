@@ -1,0 +1,225 @@
+#mainPage {
+  background-image: url("/public/images/main/back-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#mainPage .slide-container {
+  max-width: 1860px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#mainPage .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+#mainPage section {
+  padding: 70px 30px;
+}
+#mainPage .img-intro-title {
+  display: block;
+  width: 100%;
+  margin: 0 0 45px;
+}
+#mainPage .img-intro-doc {
+  display: block;
+  width: 100%;
+  max-width: 230px;
+}
+#mainPage #intro h4 {
+  margin: 0 0 45px;
+  font-size: 34px;
+  font-weight: 500;
+}
+#mainPage #intro .box {
+  padding: 45px 30px;
+  background-color: #fff;
+  border: 1px solid #0858c5;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+#mainPage #intro .box1 {
+  margin: 0 0 45px;
+}
+#mainPage #intro h4 strong {
+  color: #0858c5;
+}
+#mainPage #intro li {
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+#mainPage #intro .box2 h4 {
+  text-align: center;
+  font-weight: 500;
+}
+#mainPage #intro .box2 dl {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 0 10px;
+}
+#mainPage #intro .box2 dl.font-red {
+  color: red;
+}
+#mainPage #intro .box2 dl dt {
+  width: 80px;
+  margin: 0 20px 0 0;
+  font-size: 22px;
+}
+#mainPage #intro .box2 dl dd {
+  margin: 0;
+  line-height: 1.65;
+  font-size: 20px;
+}
+#mainPage #intro .box2 .grey {
+  font-size: 14px;
+  color: grey;
+}
+#mainPage #intro .box2 .counsel p {
+  font-size: 20px;
+}
+#mainPage #intro .box2 .counsel ul {
+  margin: 0 0 45px;
+}
+#mainPage #intro .box2 .counsel li {
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+#mainPage #intro .box2 .counsel li:first-child {
+  margin: 0 0 20px;
+}
+#mainPage #intro .box2 .counsel img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+}
+#mainPage #intro .box2 .counsel a {
+  color: #3e3e3e;
+}
+
+#mainPage #communicate {
+  background-image: url("/public/images/main/sec2-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#mainPage #communicate .box h4 {
+  position: relative;
+  margin: 0 0 35px;
+  color: #fff;
+  text-align: center;
+  font-size: 34px;
+}
+#mainPage #communicate .box h4::after {
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: #fff;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+#mainPage #communicate .notice-board .table {
+  max-width: 920px;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.8);
+}
+#mainPage #communicate .notice-board th {
+  padding: 10px 35px;
+}
+#mainPage #communicate .notice-board th:nth-child(1) {
+  width: 80%;
+}
+#mainPage #communicate .notice-board th:nth-child(2) {
+  width: 20%;
+}
+#mainPage #communicate .notice-board td {
+  padding: 10px 35px;
+}
+#mainPage #communicate .notice-board td a {
+  color: #3e3e3e;
+  display: block;
+  width: 90%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+#mainPage #communicate .sns {
+  max-width: 920px;
+  margin: 45px auto 0;
+}
+#mainPage #communicate .sns ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#mainPage #communicate .sns li {
+  width: 32%;
+}
+#mainPage #communicate .sns a {
+  position: relative;
+  display: block;
+  width: 100%;
+  color: #fff;
+}
+#mainPage #communicate .sns a img {
+  display: block;
+  width: 100%;
+}
+#mainPage #communicate .sns .text-area {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 37%;
+}
+#mainPage #communicate .sns .text-area h6 {
+  margin: 13% 0 3px;
+  font-size: 24px;
+}
+#mainPage #map h4 {
+  margin: 0 0 35px;
+  font-size: 34px;
+  text-align: center;
+}
+#mainPage #mapLoader {
+  width: 100%;
+  height: 560px;
+  border: 5px solid #fff;
+}
+#mainPage .traffic-guide {
+  background-color: #fff;
+}
+#mainPage .traffic-guide dl {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 25px 5px;
+}
+#mainPage .traffic-guide dl a {
+  margin: 0 5px 0 0;
+  display: inline-block;
+  color: #3e3e3e;
+  text-decoration: underline;
+}
+#mainPage .traffic-guide dt {
+  font-size: 18px;
+  width: 120px;
+}
+#mainPage .traffic-guide dd {
+  font-size: 16px;
+  margin: 0;
+}
