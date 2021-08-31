@@ -53,7 +53,7 @@ textarea {
 }
 section {
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 60px 30px;
 }
 section .wrap {
   max-width: 1300px;
@@ -61,4 +61,7 @@ section .wrap {
 .subpage-visual img {
   display: block;
   width: 100%;
+}
+.subpage-visual .mobile {
+  display: none;
 }

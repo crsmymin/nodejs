@@ -16,29 +16,32 @@ exports.sendmail = (req, res, next) => {
   // set transporter
   var transporter = nodemailer.createTransport({
     service: 'Naver',
-    // host: 'smtp.naver.com',
-    // port: 587,
+    host: 'smtp.naver.com', // gmail server 사용
+    port: 587,
+    secure: false,
     auth: {
       user: mailinfo.user,
       pass: mailinfo.pass
     },
-    // tls: {
-    //   rejectUnauthorized: false
-    // }
+    tls: {
+      rejectUnauthorized: false
+    }
   })
 
   // set mail option set 
   var mailOption = {
-    from: "From Website 스타치과의원",
+    from: "\"From 스타치과의원 Website\" <crsmymin@naver.com>",
     to: "yeongmin.kang@cfind.co.kr",
     subject: req.body.contact_subject,
-    html: "<h2 style='font-size:24px;'>스타치과의원 문의 메일입니다.</h2>" +  
-          "<h4 style='font-size:18px;'>연락처 : " + req.body.contact_phone + "</h4>" +
-          "<h4 style='font-size:18px;'>카테고리 : " + req.body.contact_type + "<h4/>" +
-          "<pre style='font-size:15px;'>" + req.body.contact_content + "</pre>",
+    html: "<div style='width:60%;margin:50px auto;padding:20px;border:1px solid #e3e3e3'>" +
+          "<h1><img src='http://13.125.51.128/public/images/common/top_logo.png'></h1>" +
+          "<h2 style='margin:0 0 15px;font-size:22px;'>스타치과의원 문의 메일입니다.</h2>" +  
+          "<h4 style='margin:0 0 10px;font-size:17px;'>연락처 : " + req.body.contact_phone + "</h4>" +
+          "<h4 style='margin:0 0 10px;font-size:17px;'>카테고리 : " + req.body.contact_type + "<h4/>" +
+          "<pre style='font-size:15px;'>" + req.body.contact_content + "</pre>" +
+          "</div>"
   }
 
-  console.log(mailOption);
   // send 
   transporter.sendMail(mailOption, function(error, info){
     if (error) {

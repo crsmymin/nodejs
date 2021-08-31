@@ -1,0 +1,47 @@
+#businessPage1 section img {
+  display: block;
+  width: 100%;
+}
+#businessPage1 .tab-menu {
+  margin: 0 auto 0;
+  max-width: 1300px;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  border-right: 0;
+}
+#businessPage1 .tab-menu.sticky {
+  position: fixed;
+  top: 147px;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+}
+#businessPage1 .tab-menu li{
+  width: calc(100% / 6);
+}
+#businessPage1 .tab-menu li a {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding: 12px 0;
+  text-align: center;
+  color: #666;
+  font-size: 14.5px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
+}
+#businessPage1 .tab-menu li a:hover {
+  background-color: #4e9e00;
+  color: #fff;
+}
+#businessPage1 .tab-menu li.active a {
+  color: #fff;
+  background-color: #4e9e00;
+}
