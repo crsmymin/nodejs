@@ -495,11 +495,6 @@ aside li:nth-child(5) a {
   align-items: center;
   border-bottom: 1px solid #ccc;
   border-right: 1px solid #ccc;
-  transition: all .4s;
-  -webkit-transition: all .4s;
-  -moz-transition: all .4s;
-  -ms-transition: all .4s;
-  -o-transition: all .4s;
 }
 #businessPage1 .tab-menu li a:hover {
   background-color: #4e9e00;
@@ -508,6 +503,12 @@ aside li:nth-child(5) a {
 #businessPage1 .tab-menu li.active a {
   color: #fff;
   background-color: #4e9e00;
+}
+#businessPage1 .tab-cont {
+  display: none;
+}
+#businessPage1 .tab-cont.show {
+  display: block;
 }
 
 #aboutPage section h4 {

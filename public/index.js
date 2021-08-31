@@ -10,5 +10,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import './css/style.css';
 import './js/global.js';
 import './js/main.js';
+import './js/business.js';
 import './js/board.js';
 import './js/contact.js';

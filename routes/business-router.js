@@ -9,6 +9,13 @@ router.get('/implant', function(req, res, next) {
     contents : ""
   })
 });
+router.get('/implant/services', function(req, res, next) {
+  res.render('business1/services', {
+    title: "임플란트",
+    id: "businessPage1",
+    contents : ""
+  })
+});
 
 router.get('/general', function(req, res, next) {
   res.render('business2/intro', {
