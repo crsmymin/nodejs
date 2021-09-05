@@ -9,6 +9,9 @@ import Swiper from 'swiper';
     const swiper = new Swiper('.slide-container', {
       // Optional parameters
       loop: true,
+      autoplay: {
+        delay: 3000,
+      },
       slidesPerView: 1, 
       // If we need pagination
       pagination: {

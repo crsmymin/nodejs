@@ -8,7 +8,7 @@ const moment = require('moment');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   // query
-  var sql = 'select * from board where not deleted in(true)';
+  var sql = 'select * from board where not deleted in(true) ORDER BY board_no DESC';
   conn.query(sql, function (err, rows, fields) {
     if(err) console.log('query is not excuted. select fail...\n' + err);
     else {
