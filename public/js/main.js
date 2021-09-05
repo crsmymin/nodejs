@@ -11,6 +11,7 @@ import Swiper from 'swiper';
       loop: true,
       autoplay: {
         delay: 3000,
+        disableOnInteraction: true
       },
       slidesPerView: 1, 
       // If we need pagination
