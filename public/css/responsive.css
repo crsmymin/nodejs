@@ -323,6 +323,10 @@
   #mainPage #communicate .sns .text-area h6 {
     font-size: 18px;
   }
+  #mainPage #map h4 {
+    margin: 0 0 20px;
+    font-size: 20px;
+  }
   #mainPage #mapLoader {
     height: 360px;
   }
@@ -452,6 +456,17 @@
   aside li a img {
     display: block;
     width: 100%;
+  }
+
+  /* sub page */
+  #contactPage form .field {
+    flex-direction: column;
+    margin: 0;
+  }
+  #contactPage form .field-input {
+    width: 100%;
+    padding: 0;
+    margin: 3px 0;
   }
 
   /* footer */

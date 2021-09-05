@@ -1,21 +1,20 @@
-<h2><%= row.board_title %></h2>
-<div class="board-card">
-  <label for="author">작성자</label>
-  <p><%= row.author %></p>
-  <label for="boardContent">내용</label>
-  <div>
-    <%- row.board_content %>
-  </div>
-  <div class="row">
-    <h3 class="col">작성일 : <%= moment(row.created_at).format("YYYY-MM-DD HH:mm:ss")%></h3>
-    <% if(row.updated_at != null) { %>
-    <h3 class="col">수정일 : <%= moment(row.updated_at).format("YYYY-MM-DD HH:mm:ss")%></h3>
+<section>
+  <div class="wrap">
+    <h2><%= row.board_title %></h2>
+    <div class="board-card">
+      <div class="board-content">
+        <%- row.board_content %>
+      </div>
+      <div class="reg-date">
+        작성일 : <%= moment(row.created_at).format("YYYY-MM-DD HH:mm:ss")%>
+      </div>
+      <p>작성자 : <%= row.author %></p>
+    </div>
+    <% if(session.user) { %> 
+    <div class="btn-wrap row">
+      <a class="btn btn-secondary" href="/board/edit/<%= row.board_no %> ">게시글 수정</a>
+      <a class="btn btn-danger" id="btnDelete" href="javascript:void(0)">게시글 삭제</a>
+    </div>
     <% } %> 
   </div>
-</div>
-<% if(session.user) { %> 
-<div class="btn-wrap row">
-  <a class="btn btn-secondary" href="/board/edit/<%= row.board_no %> ">게시글 수정</a>
-  <a class="btn btn-danger" id="btnDelete" href="javascript:void(0)">게시글 삭제</a>
-</div>
-<% } %> 
+</section>
