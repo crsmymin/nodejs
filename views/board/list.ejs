@@ -7,7 +7,7 @@
     <table class="table table-hover" id="listTable">
       <thead>
         <tr>
-          <th>글번호</th>
+          <th>No</th>
           <th>제목</th>
           <th>작성자</th>
           <th>작성일</th>
@@ -24,7 +24,7 @@
           </td>
           <td><%=list[i].author %></td>
           <td>
-            <%= moment(list[i].created_at).format("YYYY-MM-DD HH:mm:ss")%>
+            <%= moment(list[i].created_at).format("YYYY-MM-DD")%>
           </td>
         </tr>
         <% } %> 

@@ -16,4 +16,18 @@ $(function(){
       $(".tab-cont").eq(idx - 1).addClass("show");
     })
   }
+
+  if(servicePageNo != undefined) {
+    console.log(servicePageNo);
+    $("#businessPage2 .tab").eq(servicePageNo).addClass("active");
+    $(".tab-cont").eq(servicePageNo - 1).addClass("show");
+    $("#businessPage2 .tab").on("click", function() {
+      $("#businessPage2 .tab").not($(this)).removeClass("active");
+      $(this).addClass("active");
+      var idx = $(this).index();
+      console.log(idx);
+      $(".tab-cont").removeClass("show");
+      $(".tab-cont").eq(idx - 1).addClass("show");
+    })
+  }
 })

@@ -11,7 +11,7 @@ module.exports = {
     index: ["@babel/polyfill","./public/index.js"],
   },
   output: {
-    filename: "[name].bundle.js",
+    chunkFilename: "[name].bundle.js",
     path: path.resolve(__dirname, "./dist"),
     publicPath: "/dist/",
   },
@@ -38,6 +38,7 @@ module.exports = {
     ],
   },
   optimization: {
+    minimize: true,
     splitChunks: {
       cacheGroups: {
         vendors: {
@@ -55,7 +56,6 @@ module.exports = {
       jQuery: "jquery"
     }),
     new MiniCssExtractPlugin({ 
-      // filename: 'style.css',
       chunkFilename: 'style.css',
     }),
   ],

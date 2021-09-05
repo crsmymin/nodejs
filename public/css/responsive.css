@@ -145,6 +145,7 @@
     opacity: 1;
   }
   #mobileGnb li a {
+    margin: 0 0 0 10px;
     padding: 16px 15px 16px 50px;
     display: block;
     width: 100%;
@@ -388,6 +389,21 @@
     width: calc(100% / 3);
   }
   #businessPage1 .tab-menu li a {
+    font-size: 13.5px;
+  }
+  #businessPage2 .tab-menu.sticky {
+    position: static;
+  }
+  #businessPage2 .tab-menu li {
+    width: calc(100% / 3);
+  }
+  #businessPage2 .tab-menu li a {
+    font-size: 13.5px;
+  }
+  #communityPage .table td,
+  #communityPage .table th {
+    padding: 5px;
+    box-sizing: border-box;
     font-size: 13.5px;
   }
 }

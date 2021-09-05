@@ -25,4 +25,12 @@ router.get('/general', function(req, res, next) {
   })
 });
 
+router.get('/general/services', function(req, res, next) {
+  res.render('business2/services', {
+    title: "종합진료",
+    id: "businessPage2",
+    contents : ""
+  })
+});
+
 module.exports = router;

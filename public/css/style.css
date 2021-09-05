@@ -14,16 +14,3 @@
   background: rgba(0, 0, 0, 0.7);
   border-radius: 25px;
 }
-
-@import url("./common.css");
-@import url("./nav.css");
-@import url("./footer.css");
-@import url("./aside.css");
-@import url("./main.css");
-@import url("./business1.css");
-@import url("./business2.css");
-@import url("./about.css");
-@import url("./contact.css");
-
-/* responsive */
-@import url("./responsive.css");
