@@ -11,7 +11,7 @@
     <form class="w-1/2 mx-auto bg-white rounded-md" id="mailForm" action="/contact/sendmail" method="POST">
       <div class="mb-3 row">
         <div class="col">
-          <input name="contact_phone" type="text" class="form-control col" placeholder="답변받을 연락처 EX) 01012345678" maxlength="11" required>
+          <input onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" name="contact_phone" type="text" class="form-control col" placeholder="답변받을 연락처 EX) 01012345678" maxlength="11" required>
         </div>
         <div class="col">
           <select class="form-control col" name="contact_type" id="contactType" required>
