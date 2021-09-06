@@ -32,7 +32,7 @@ exports.sendmail = (req, res, next) => {
   // set mail option set 
   var mailOption = {
     from: "\"From 스타치과의원 Website\" <crsmymin@naver.com>",
-    to: "yeongmin.kang@cfind.co.kr",
+    to: "ngstar0@daum.net",
     subject: req.body.contact_subject,
     html: "<div style='width:60%;margin:50px auto;padding:20px;border:1px solid #e3e3e3'>" +
           "<h1><img src='http://13.125.51.128/public/images/common/top_logo.png'></h1>" +
