@@ -15,7 +15,7 @@ exports.index = (req, res, next) => {
     else {
       res.render('board/list',{
         list : rows,
-        title: "Blog",
+        title: "공지사항",
         id: "communityPage",
         moment: moment,
         session: session 
@@ -31,7 +31,7 @@ exports.write = (req, res, next) => {
   var session = req.session;
   if(session.user) {
     res.render('board/write',{
-      title: "Blog",
+      title: "공지사항",
       id: "communityPage",
     });
   } else {
@@ -82,7 +82,7 @@ exports.view = (req, res, next) => {
     if(err) console.log('query is not excuted. select fail...\n' + err);
     else res.render('board/view',{
       row : row[0],
-      title: "Blog",
+      title: "공지사항",
       id: "communityPage",
       moment: moment,
       session: session 
@@ -105,7 +105,7 @@ exports.edit = (req, res, next) => {
       if(err) console.log('query is not excuted. select fail...\n' + err);
       else res.render('board/edit',{
         row : row[0],
-        title: "Blog",
+        title: "공지사항",
         id: "communityPage",
       })
     })

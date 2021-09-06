@@ -9,3 +9,14 @@
 #communityPage table td:nth-child(2) {width:50%}
 #communityPage table td:nth-child(3) {width:15%}
 #communityPage table td:nth-child(4) {width:25%}
+
+#communityPage .board-title {
+  text-align: center;
+  margin: 20px 0 45px;
+}
+#communityPage .board-content {
+  padding: 25px 0;
+  margin: 0 0 35px;
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+}

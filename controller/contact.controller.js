@@ -28,6 +28,7 @@ exports.sendmail = (req, res, next) => {
     }
   })
 
+
   // set mail option set 
   var mailOption = {
     from: "\"From 스타치과의원 Website\" <crsmymin@naver.com>",
