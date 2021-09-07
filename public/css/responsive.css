@@ -410,6 +410,9 @@
     box-sizing: border-box;
     font-size: 13.5px;
   }
+  .popup-list {
+    display: none;
+  }
 }
 
 /* max-width 419 */
