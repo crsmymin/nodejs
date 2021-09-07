@@ -6,6 +6,7 @@
   background-attachment: fixed;
 }
 #mainPage .slide-container {
+  position: relative;
   max-width: 1860px;
   margin: 0 auto;
   overflow: hidden;
@@ -219,4 +220,46 @@
 #mainPage .traffic-guide dd {
   font-size: 16px;
   margin: 0;
+}
+#mainPage .swiper-button-prev,
+#mainPage .swiper-button-next {
+  color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+#mainPage .swiper-pagination-bullet {
+  background-color: #3e3e3e;
+  opacity: .3;
+}
+#mainPage .swiper-pagination-bullet-active {
+  background-color: #3e3e3e;
+  opacity: 1;
+}
+
+/* popup */
+.popup {
+  position: absolute;
+  max-width: 460px;
+  top: 180px;
+  z-index: 99;
+}
+.popup .bottom-area {
+  padding: 3px 8px;
+  background-color: #fff;
+  border: 1px solid #3e3e3e;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.popup .bottom-area a {
+  color: #3e3e3e;
+  font-size: 14px;
+}
+.popup img {
+  display: block;
+  width: 100%;
 }
