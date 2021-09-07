@@ -1,12 +1,16 @@
-<form class="w-1/2 mx-auto bg-white rounded-md" id="writeForm" action="/board/create" method="post">
-  <input type="hidden" name="author" value="<%= user.id %>">
-  <div class="mb-3">
-    <label class="form-label" for="boardTitle">글제목</label>
-    <input class="form-control" id="boardTitle" type="text" name="board_title" required>
+<section>
+  <div class="wrap">
+    <form class="w-1/2 mx-auto bg-white rounded-md" id="writeForm" action="/board/create" method="post">
+      <input type="hidden" name="author" value="<%= user.id %>">
+      <div class="mb-3">
+        <label class="form-label" for="boardTitle">글제목</label>
+        <input class="form-control" id="boardTitle" type="text" name="board_title" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="boardContent">내용</label>
+        <textarea class="form-control summernote" id="boardContent" name="board_content" required></textarea>
+      </div>
+      <button class="btn btn-primary mb-3" type="submit">전송</button>
+    </form>
   </div>
-  <div class="mb-3">
-    <label class="form-label" for="boardContent">내용</label>
-    <textarea class="form-control summernote" id="boardContent" name="board_content" required></textarea>
-  </div>
-  <button class="btn btn-primary mb-3" type="submit">전송</button>
-</form>
+</section>

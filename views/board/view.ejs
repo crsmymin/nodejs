@@ -11,7 +11,7 @@
       <p>작성자 : <%= row.author %></p>
     </div>
     <% if(session.user) { %> 
-    <div class="btn-wrap row">
+    <div style="margin:45px 0 0" class="btn-wrap row">
       <a class="btn btn-secondary" href="/board/edit/<%= row.board_no %> ">게시글 수정</a>
       <a class="btn btn-danger" id="btnDelete" href="javascript:void(0)">게시글 삭제</a>
     </div>
