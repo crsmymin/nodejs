@@ -30,6 +30,16 @@ exports.sendmail = (req, res, next) => {
 
 
   // set mail option set 
+  if(req.body.contact_type === "1") {
+    req.body.contact_type = "종합진료";
+  } else if(req.body.contact_type === "2") {
+    req.body.contact_type = "임플란트";
+  } else if(req.body.contact_type === "3") {
+    req.body.contact_type = "충치치료";
+  } else {
+    req.body.contact_type = "기타";
+  }
+
   var mailOption = {
     from: "\"From 스타치과의원 Website\" <crsmymin@naver.com>",
     to: "ngstar0@daum.net",
@@ -42,6 +52,8 @@ exports.sendmail = (req, res, next) => {
           "<pre style='font-size:15px;'>" + req.body.contact_content + "</pre>" +
           "</div>"
   }
+
+  console.log(mailOption);
 
   // send 
   transporter.sendMail(mailOption, function(error, info){
