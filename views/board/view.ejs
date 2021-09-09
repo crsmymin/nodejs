@@ -5,6 +5,7 @@
       <div class="board-content">
         <%- row.board_content %>
       </div>
+      <a href="javascript:history.back();" class="btn btn-secondary">목록으로</a>
       <div class="reg-date">
         작성일 : <%= moment(row.created_at).format("YYYY-MM-DD HH:mm:ss")%>
       </div>
@@ -15,6 +16,6 @@
       <a class="btn btn-secondary" href="/board/edit/<%= row.board_no %> ">게시글 수정</a>
       <a class="btn btn-danger" id="btnDelete" href="javascript:void(0)">게시글 삭제</a>
     </div>
-    <% } %> 
+    <% } %>
   </div>
 </section>
