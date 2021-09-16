@@ -11,9 +11,12 @@
   margin: 0 auto;
   overflow: hidden;
 }
-#mainPage .swiper-slide img {
+#mainPage .swiper-slide img.desktop {
   display: block;
   width: 100%;
+}
+#mainPage .swiper-slide img.mobile {
+  display: none;
 }
 #mainPage .img-intro-title {
   display: block;

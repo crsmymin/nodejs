@@ -228,6 +228,13 @@
   }
 
   /* main page */
+  #mainPage .swiper-slide img.desktop {
+    display: none;
+  }
+  #mainPage .swiper-slide img.mobile {
+    display: block;
+    width: 100%;
+  }
   #mainPage .img-intro-title {
     margin: 0 0 25px;
   }
