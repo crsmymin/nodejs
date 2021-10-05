@@ -11,8 +11,33 @@ $(".popup").draggable()
 
 $(".popup").each(function(index, item) {
   var popupNo = index + 1;
-  $(".popup" + popupNo).css({
-    left : 350 * index
+  if(window.innerWidth < 719) {
+    $(".popup" + popupNo).css({
+      left : 0,
+      top : 35 * index,
+      "z-index" : 100 - index
+    })
+  } else {
+    $(".popup" + popupNo).css({
+      left : 350 * index
+    })
+  }
+})
+
+$(window).on("resize", function() {
+  $(".popup").each(function(index, item) {
+    var popupNo = index + 1;
+    if(window.innerWidth < 719) {
+      $(".popup" + popupNo).css({
+        left : 0,
+        top : 35 * index,
+        "z-index" : 100 - index
+      })
+    } else {
+      $(".popup" + popupNo).css({
+        left : 350 * index
+      })
+    }
   })
 })
 

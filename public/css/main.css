@@ -32,76 +32,76 @@
   margin: 0 0 45px;
   font-size: 34px;
   font-weight: 500;
-}
-#mainPage #intro .box {
-  padding: 45px 30px;
-  background-color: #fff;
-  border: 1px solid #0858c5;
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
+  text-align: center;
 }
 #mainPage #intro .box1 {
-  margin: 0 0 45px;
+  margin: 0 0 50px;
 }
-#mainPage #intro h4 strong {
-  color: #0858c5;
+#mainPage #intro .video-wrap {
+  max-width: 1300px;
+  margin: 0 auto;
 }
-#mainPage #intro li {
-  font-size: 18px;
-  margin: 0 0 8px;
+#mainPage #intro video {
+  width: 100%;
+  vertical-align: bottom;
 }
-#mainPage #intro .box2 h4 {
-  text-align: center;
-  font-weight: 500;
+#mainPage #intro .img-wrap {
+  max-width: 1300px;
+  margin: 80px auto 0;
 }
-#mainPage #intro .box2 dl {
+#mainPage #intro .img-wrap img {
+  width: 100%;
+  margin: 80px 0;
+  display: block;
+}
+#mainPage #intro h4 {
+  clear: both;
+}
+#mainPage #intro .box2 {
+  overflow: hidden;
+}
+#mainPage #intro .box2 .part {
+  float: left;
+  width: 50%;
+}
+#mainPage #intro .box2 .thumb-no {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0 0 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
 }
-#mainPage #intro .box2 dl.font-red {
-  color: red;
+#mainPage #intro .box2 .part h5 {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0 0 15px 10%;
+  color: #3f3f3f;
 }
-#mainPage #intro .box2 dl dt {
-  width: 80px;
-  margin: 0 20px 0 0;
-  font-size: 22px;
+#mainPage #intro .box2 .part h5 b {
+  color: #345985;
+  font-weight: 700;
 }
-#mainPage #intro .box2 dl dd {
-  margin: 0;
-  line-height: 1.65;
-  font-size: 20px;
+#mainPage #intro .mySwiper2,
+#mainPage #intro .mySwiper {
+  max-width: 540px;
+  width: 100%;
 }
-#mainPage #intro .box2 .grey {
-  font-size: 14px;
-  color: grey;
+#mainPage #intro .mySwiper2,
+#mainPage #intro .mySwiper {
+  margin: 0 0 0 auto;
 }
-#mainPage #intro .box2 .counsel p {
-  font-size: 20px;
-}
-#mainPage #intro .box2 .counsel ul {
-  margin: 0 0 45px;
-}
-#mainPage #intro .box2 .counsel li {
-  margin: 0 0 5px;
-  font-size: 16px;
-}
-#mainPage #intro .box2 .counsel li:first-child {
-  margin: 0 0 20px;
-}
-#mainPage #intro .box2 .counsel img {
+#mainPage #intro .mySwiper2 img,
+#mainPage #intro .mySwiper img {
   display: block;
   width: 100%;
-  max-width: 300px;
 }
-#mainPage #intro .box2 .counsel a {
-  color: #3e3e3e;
-}
-
 #mainPage #communicate {
   background-image: url("/public/images/main/sec2-bg.jpg");
   background-position: center;
