@@ -13,12 +13,12 @@ router.get('/login', function(req, res, next){
   })
 });
 
-// router.get('/signup', function(req, res, next){
-//   res.render('users/signup_form',{
-//     title: "Blog",
-//     id: "signupPage",
-//   })
-// });
+router.get('/signup', function(req, res, next){
+  res.render('users/signup_form',{
+    title: "Blog",
+    id: "signupPage",
+  })
+});
 
 /* GET logout page.*/
 router.get('/logout', function(req, res, next) {
